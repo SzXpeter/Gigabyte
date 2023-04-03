@@ -1,14 +1,14 @@
 # Zsombor
-## GPU
-## Laptop
-## Monitor
+- GPU
+- Laptop
+- Monitor
 
 # Bálint
-## PC
-## Perifériák
-## Alkatrészek
+- PC
+- Perifériák
+- Alkatrészek
 
 # Péter
-## index
-## support
-## Alaplap
+- index
+- support
+- Alaplap

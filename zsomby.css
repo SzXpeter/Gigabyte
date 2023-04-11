@@ -1,0 +1,30 @@
+/* GPU */
+
+.mt-6 {
+    margin-top: 15%;
+}
+
+/* NAVBAR */
+
+.navbar
+{
+    font-size: 1.5rem;
+    height: 75px;
+}
+
+.navbar-brand
+{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 25px;
+    /* font-variant: small-caps; */
+}
+
+.nav.link
+{
+    padding: 0 !important;
+}

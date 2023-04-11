@@ -5,8 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videókártyák</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="zsomby.css">
+    <link rel="shortcut icon" href="//www.gigabyte.com/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Gigabyte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav bold mx-auto">
+              <li class="nav-item me-lg-5 ms-0">
+                <a class="nav-link active" href="index.html">Főoldal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Számítógépek
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="alaplap.html">Alaplapok</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="gpu.html">Videó kártyák</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="pc.html">Asztali PC-k</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="pc-periferiak.html">PC perifériák</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="pc-alkatreszek.html">PC alkatrészek</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="laptop.html">Laptop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="monitor.html">Monitorok</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-lg-5 ms-0">
+                <a class="nav-link" href="support.html">Segítségkérés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/155e1011ab3e923ec59cb66f471c6883/PromotionBanner/255" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/56f731e7ba2f561e72c441511f113d50/PromotionBanner/217" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/3f908e48a96f4c7efbf33ed2b1cf7065/PromotionBanner/235" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="col-xxl-7 mx-auto mt-5 mb-5 border border-3 border-dark gpuMenu text-center">
+        <!-- <label for="#aorus">AORUS</label>
+            <input type="checkbox" name="aorus" id="aorus gpu">
+        <br>
+        <label for="#aero">AERO</label>
+            <input type="checkbox" name="aero" id="aero gpu">
+        <br>
+        <label for="#gigabyte">GIGABYTE</label>
+            <input type="checkbox" name="gigabyte" id="gigabyte gpu">
+        <br>
+        <label for="#nvidia_series">NVIDIA SERIES</label>
+            <input type="checkbox" name="nvidia_series" id="nvidia_series gpu">
+        <br>
+        <label for="#amd_series">AMD_SERIES</label>
+            <input type="checkbox" name="nvidia_series" id="amd_series gpu"> -->
+        <div class="row fw-bold">
+            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">AORUS</h1>
+            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">AERO</h1>
+            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">GAMING</h1>
+            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">EAGLE</h1>
+        </div>        
+        <div class="row">
+            <h4>Válassza ki a kívánt szériát!</h4>
+        </div>
+    </div>
+
     
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

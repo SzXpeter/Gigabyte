@@ -35,6 +35,24 @@ body
     padding: 0 !important;
 }
 
+/*INDEX*/
+.c0
+{
+    background-image: url(Kepek/256.jpg);
+    height: 750px;
+    width: 100%;
+    background-position: right;
+    background-size: cover;
+    color: white;
+    text-shadow: 2.5px 2px black;
+}
+
+.c0 h1
+{
+    font-size: 3rem;
+    padding-top: 300px;
+}
+
 /*SUPPORT*/
 #problemArea
 {

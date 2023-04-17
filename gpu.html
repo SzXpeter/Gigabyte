@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="zsomby.css">
     <link rel="shortcut icon" href="//www.gigabyte.com/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -82,19 +79,38 @@
         </button>
       </div>
 
-    <div class="col-xxl-7 mx-auto mt-5 mb-5 border border-3 border-dark gpuMenu text-center">
-        <div class="row fw-bold">
-            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">AORUS</h1>
-            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">AERO</h1>
-            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">GAMING</h1>
-            <h1 class="col-xxl-3 float-top gpuButton" role="button" onclick="">EAGLE</h1>
-        </div>        
+    <div class="col-xxl-7 mx-auto mt-5 mb-5 border border-3 border-dark text-center">
         <div class="row">
-            <h4>Válassza ki a kívánt szériát!</h4>
+            <h1 class="mb-3">Különböző szériáink tökéletes teljesítményt fognak nyújtani önnek!</h1>
+        </div>
+        <hr>
+        <div class="row fw-bold">
+            <a href="#nvidia_series" class="typeSelect col-xxl-3 float-top">
+                <h3>NVIDIA Series</h3>
+            </a>
+            <a href="#amd_series" class="typeSelect col-xxl-3 float-top">
+                <h3>AMD Series</h3>
+            </a>
+            </a>
+        </div>
+    </div>
+    <div class="col-xxl-7 mx-auto mt-5 mb-5 border border-3 border-dark text-center">
+        <div class="row" id="nvidia_series">
+            <div class="card ms-5" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GeForce RTX<sup>TM</sup> 4070 Ti EAGLE OC 12G (rev. 1.0)</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+            </div>
         </div>
     </div>
 
+
+
     
 <script src="bootstrap.bundle.min.js"></script>
+<script src="zsomby.js"></script>
 </body>
 </html>

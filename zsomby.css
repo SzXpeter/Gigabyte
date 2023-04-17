@@ -1,8 +1,17 @@
-/* full_Website */
-
-h1 {
-    font-family: 'Bebas Neue', cursive;
-}
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 
 /* GPU */
 
+.nav.link
+{
+    padding: 0 !important;
+}
+
+.typeSelect {
+    text-decoration: none;
+    color: black;
+}
+
+.typeSelect:hover {
+    cursor: pointer;
+}

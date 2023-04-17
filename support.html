@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gigabyte</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Gigabyte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav bold mx-auto">
+              <li class="nav-item me-lg-5 ms-0">
+                <a class="nav-link" href="index.html">Főoldal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Számítógépek
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="alaplap.html">Alaplapok</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link dropdown-item" href="gpu.html">Videó kártyák</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-item" href="pc.html">Asztali PC-k</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" href="pc-periferiak.html">PC perifériák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-item" href="pc-alkatreszek.html">PC alkatrészek</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item" href="laptop.html">Laptop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item" href="monitor.html">Monitorok</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav-item ms-lg-5 ms-0">
+                <a class="nav-link active" href="support.html">Segítségkérés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container col-xl-6 col-lg-8 col-12">
+        <form>
+            <div class="row my-3">
+                <div class="col-lg-8 col-12">
+                    <label for="e-mail" class="form-label">Email cím</label>
+                    <input type="email" class="form-control" id="e-mail" placeholder="name@example.com">
+                </div>
+                <div class="col-lg-4 col-12">
+                    <label for="problem" class="form-label">Probléma</label>
+                    <select class="form-select" id="problem">
+                        <option value="motherboard">Alaplap</option>
+                        <option value="gpu">Videó Kártya</option>
+                        <option value="desktop-PC">Asztali gép</option>
+                        <option value="peripheral">Periféria</option>
+                        <option value="component">Egyéb alkatrész</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="monitor">Monitor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="my-3">
+                <label for="problemArea" class="form-label">Írjon bővebben a problémájárol</label>
+                <textarea class="form-control" id="problemArea" rows="3"></textarea>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-primary" type="submit" onclick="getData('e-mail'), getData('problem'), getData('problemArea')">Küldés</button>
+            </div>    
+        </form>      
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

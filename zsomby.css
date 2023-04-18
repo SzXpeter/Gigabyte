@@ -8,3 +8,7 @@
 .typeSelect:hover {
     cursor: pointer;
 }
+
+.gpuCard {
+    background-color: #8d8d8a;
+}

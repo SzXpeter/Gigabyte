@@ -32,6 +32,8 @@
 
 .backArrow {
     color: black;
-    transform: rotate(-90deg);
-    size: 120%;
+    transform: rotate(-90deg) !important;
+    size: 130%;
+    text-decoration: none;
+    display: block;
 }

@@ -3,7 +3,7 @@
 
 body
 {
-    background-color: #CCC;
+    background-color: #DEDEDE;
 }
 
 .bold
@@ -16,6 +16,7 @@ body
 {
     font-size: 1.5rem;
     height: 75px;
+    z-index: 20;
 }
 
 .navbar-brand
@@ -36,21 +37,53 @@ body
 }
 
 /*INDEX*/
-.c0
+.chapter
 {
-    background-image: url(Kepek/256.jpg);
-    height: 750px;
+    height: 40vw;
+    min-height: 450px;
     width: 100%;
-    background-position: right;
+    background-position: center;
     background-size: cover;
     color: white;
     text-shadow: 2.5px 2px black;
+    margin-top: -.5rem;
+}
+
+.chapter p
+{
+    font-size: 1.5rem;
+}
+
+.chapter .btn
+{
+    background-color: #DDD;
+    text-shadow: none;
+}
+
+.c0
+{
+    background-image: url(Kepek/c0-splash.jpg);
 }
 
 .c0 h1
 {
     font-size: 3rem;
-    padding-top: 300px;
+    padding-top: 15vw;
+}
+
+.c1
+{
+    background-image: url(Kepek/c1-splash.jpg);
+}
+
+.c1 h1
+{
+    padding-top: 15vw;
+}
+
+.c2
+{
+    background-image: url(Kepek/c2-splash.jpg);
 }
 
 /*SUPPORT*/

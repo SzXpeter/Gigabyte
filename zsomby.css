@@ -12,3 +12,26 @@
 .gpuCard {
     background-color: #8d8d8a;
 }
+
+.card-body {
+    width: 110%;
+    margin-left: -0.85rem;
+    border-radius: 0 0 .4rem .4em;
+    background-color: #333;
+}
+
+.gpuButton {
+    background-color: white;
+    color: black;
+}
+
+.gpuButton:hover {
+    background-color: black;
+    color: white;
+}
+
+.backArrow {
+    color: black;
+    transform: rotate(-90deg);
+    size: 120%;
+}

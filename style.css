@@ -3,7 +3,7 @@
 
 body
 {
-    background-color: #DEDEDE;
+    background-color: #EEE;
 }
 
 .bold
@@ -49,6 +49,11 @@ body
     margin-top: -.5rem;
 }
 
+.chapter h1
+{
+    padding-top: 15vw;
+}
+
 .chapter p
 {
     font-size: 1.5rem;
@@ -56,8 +61,16 @@ body
 
 .chapter .btn
 {
-    background-color: #DDD;
+    background-color: #EEE;
     text-shadow: none;
+    transition: .1s;
+}
+
+.chapter .btn:hover
+{
+    transform: scale(120%);
+    color: black;
+    transition: .1s;
 }
 
 .c0
@@ -68,17 +81,11 @@ body
 .c0 h1
 {
     font-size: 3rem;
-    padding-top: 15vw;
 }
 
 .c1
 {
     background-image: url(Kepek/c1-splash.jpg);
-}
-
-.c1 h1
-{
-    padding-top: 15vw;
 }
 
 .c2
@@ -90,4 +97,10 @@ body
 #problemArea
 {
     resize: none;
+}
+
+/*GPU*/
+#GPUs
+{
+    overflow: hidden;
 }

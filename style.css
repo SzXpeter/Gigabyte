@@ -12,6 +12,14 @@ body
 }
 
 /*NAVBAR*/
+#navbar
+{
+    position: fixed;
+    top: 0;
+    transition: top .3s;
+    width: 100%;
+}
+
 .navbar
 {
     font-size: 1.5rem;
@@ -100,12 +108,12 @@ body
 
 .c4
 {
-    background-image: url(Kepek/c4-splash.jpg);
+    background-image: url(Kepek/c5-splash.jpg);
 }
 
 .c5
 {
-    background-image: url(Kepek/c5-splash.jpg);
+    background-image: url(Kepek/c4-splash.jpg);
 }
 
 .c6

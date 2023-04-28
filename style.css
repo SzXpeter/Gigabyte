@@ -11,6 +11,11 @@ body
     font-weight: bold;
 }
 
+.card
+{
+    border: #EEE solid 1rem;
+}
+
 /*NAVBAR*/
 #navbar
 {

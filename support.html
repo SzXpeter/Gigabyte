@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="//www.gigabyte.com/favicon.ico" type="image/x-icon">
     <title>Gigabyte</title>
     <script src="form.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gigabyte</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,6 +68,7 @@
                 <div class="col-lg-4 col-12">
                     <label for="problem" class="form-label">Probléma</label>
                     <select class="form-select" id="problem">
+                        <option selected><-Válasszon problémát-></option>
                         <option value="motherboard">Alaplap</option>
                         <option value="gpu">Videó Kártya</option>
                         <option value="desktop-PC">Asztali gép</option>
@@ -77,16 +79,27 @@
                     </select>
                 </div>
             </div>
+            <div class="row my-3">
+              <div class="col-12 col-md-6">
+                <label for="surname" class="form-label">Vezeték név</label>
+                <input type="text" class="form-control" id="surname">
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="firsname" class="form-label">Keresztnév</label>
+                <input type="text" class="form-control" id="firstname">
+              </div>
+            </div>
             <div class="my-3">
                 <label for="problemArea" class="form-label">Írjon bővebben a problémájárol</label>
                 <textarea class="form-control" id="problemArea" rows="3"></textarea>
             </div>
             <div class="mt-4">
-                <button class="btn btn-primary" type="submit" onclick="getData('e-mail'), getData('problem'), getData('problemArea')">Küldés</button>
+                <button class="btn btn-primary" type="submit" onclick="getData('e-mail'), getData('problem'), getData('surname'), getData('firstname'), getData('problemArea')">Küldés</button>
             </div>    
         </form>      
     </div>
 
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="gigabyte.js"></script>
 </body>
 </html>

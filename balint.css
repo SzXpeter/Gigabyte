@@ -35,23 +35,8 @@ body
     padding: 0 !important;
 }
 
-/*SUPPORT*/
-#problemArea
-{
-    resize: none;
-}
-
 /*PC perifériák*/
 
-.lent {
-    padding-top: 3%;
-}
-
-.tab {
-    font-weight: 400;
-    max-width: fit-content;
-}
-
-.tab:hover {
-    text-decoration: underline;
+.közép {
+    text-align: center;
 }

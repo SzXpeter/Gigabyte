@@ -158,6 +158,20 @@ body
 }
 
 /*ALAPLAPOK*/
+#motherboardBody {
+    background-color: white;
+}
+
+.motherboardCard {
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+.motherboardCard:hover {
+    box-shadow: 5px 5px 15px grey;
+    transition: 0.5s;
+}
+
 #intelCheckBox, #amdCheckBox
 {
     accent-color: #000;

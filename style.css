@@ -153,7 +153,50 @@ body
     resize: none;
 }
 
-/*GPU*/
+/* GPU */
+
+#gpuBody {
+    background-color: white;
+}
+
+#gpuTitle {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1400px) {
+    .nvidiaText {
+        border-right: 2px solid black;
+    }
+}
+
+.typeSelect {
+    text-decoration: none;
+    color: black;
+}
+
+.typeSelect:hover {
+    cursor: pointer;
+}
+
+.gpuCard {
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+.gpuCard:hover {
+    box-shadow: 5px 5px 15px grey;
+    transition: 0.5s;
+}
+
+.backArrow {
+    color: black;
+    transform: rotate(-90deg) !important;
+    size: 1.3rem;
+    text-decoration: none;
+    display: block;
+}
+
 #GPUs
 {
     overflow: hidden;
@@ -169,14 +212,12 @@ body
     transition: .5s;
 }
 
-.motherboardCard:hover {
-    border-top: 1px solid #333333 !important;
-    border-right: 5px solid #333333 !important;
-    border-bottom: 5px solid #333333 !important;
-    border-left: 1px solid #333333 !important;
-    transition: 0.5s;
+@media screen and (min-width: 992px) {
+    .motherboardCard:hover {
+        box-shadow: 5px 5px 15px grey;
+        transition: 0.5s
+    }
 }
-
 #intelCheckBox, #amdCheckBox
 {
     accent-color: #000;
@@ -186,5 +227,79 @@ body
 
 #intel, #amd
 {
+    display: none;
+}
+
+
+/* LAPTOP */
+
+#laptopBody {
+    background-color: white;
+}
+
+#cpu, #gpu, #both {
+    display: none;
+}
+
+#cpuCheckbox, #gpuCheckbox {
+    accent-color: #000;
+    width: 2rem;
+    height: 2rem;
+}
+
+#cpuCheckbox, #gpuCheckbox:hover {
+    cursor: pointer;
+}
+
+.laptopCard {
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 1301px) {
+    .laptopCard:hover {
+        box-shadow: 5px 5px 15px grey;
+        transition: 0.5s;
+    }
+}
+
+#laptopTitle {
+    font-size: 3rem;
+}
+
+/* Monitor */
+
+#monitorTitle {
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    #monitorTitle, #laptopTitle, #gpuTitle
+    {
+        font-size: 6rem;
+    }
+}
+
+#rangeSelect {
+    accent-color: black;
+}
+
+.monitorCard {
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 992px) {
+    .monitorCard:hover {
+        box-shadow: 5px 5px 15px grey;
+        transition: 0.5s
+    }
+}
+
+#monitorBody {
+    background-color: white;
+}
+
+#firstHZ, #secondHZ, #thirdHZ, #fourthHZ {
     display: none;
 }

@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="balint.css">
     <title>PC perifériák</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top position-sticky" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top position-sticky" id="navbar" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="#">Gigabyte</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +59,14 @@
     
     <div class="container">
 
-      <h1 class="display-1 közép text-black-50">Billentyűzetek</h1>
+      <div class="oldalbar"> 
+        <a href="#billentyűzetek"><i class="fa-regular fa-keyboard"></i></a> 
+        <a href="#egerek"><i class="fa-solid fa-computer-mouse"></i></a> 
+        <a href="#fej/fülhallgatók"><i class="fa-solid fa-headphones"></i></a>
+        <a href="#gamer székek"><i class="fa-solid fa-chair"></i></a> 
+      </div>
+
+      <a name="billentyűzetek"><h1 class="display-1 közép text-black-50">Billentyűzetek</h1></a>
       <hr class="border-5">
 
       <div class="row">
@@ -190,8 +198,8 @@
             </div>
           </div>
         </div>
-
-        <h1 class="display-1 közép text-black-50">Egerek</h1>
+        
+        <a name="#egerek"><h1 class="display-1 közép text-black-50">Egerek</h1></a>
         <hr class="border-5">
 
         <div class="col mt-4">
@@ -340,7 +348,7 @@
         </div>
       
 
-    <h1 class="display-1 közép text-black-50">Fej/fülhallgatók</h1>
+    <a name="fej/fülhallgatók"><h1 class="display-1 közép text-black-50">Fej/fülhallgatók</h1></a>
     <hr class="border-5">
     
       <div class="col mt-4">
@@ -520,7 +528,7 @@
         </div>
       </div>
 
-      <h1 class="display-1 közép text-black-50">Gamer székek</h1>
+      <a name="gamer székek"><h1 class="display-1 közép text-black-50">Gamer székek</h1></a>
       <hr class="border-5">
 
       <div class="col mt-4">

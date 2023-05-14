@@ -65,7 +65,6 @@
       <h1 id="laptopTitle">Laptopok</h1>
       <p style="max-width: 80%; font-size: 1.5rem;" class="mx-auto">Legmodernebb laptopjaink, amikből kiválaszhatja, hogy a 13. generációs Intel Core processzort, az NVIDIA Geforce 40-es sorozatából való videókártyák egyikét vagy mindkettőt szeretné laptopjába.</p>
     </div>
-    <hr>
     <div class="container text-center checkboxDiv laptopBtn mx-auto mt-5 mb-5">
       <h1>Válassza ki a kívánt szempontot</h1>
       <div class="row text-center">
@@ -73,65 +72,63 @@
         <h2 class="col">Videókártya</h2>
       </div>
         <div class="row">
-          <input type="checkbox" name="" id="cpuCheckbox" class="col" onchange="show()">
-          <input type="checkbox" name="" id="gpuCheckbox" class="col" onchange="show()">
+          <input type="checkbox" name="" id="cpuCheckbox" class="col" onchange="laptopShow()">
+          <input type="checkbox" name="" id="gpuCheckbox" class="col" onchange="laptopShow()">
         </div>
     </div>
-    <!-- container div-re responzivitás tesztelésnél
-                border border-3 border-dark
-    -->
+
     <div class="container col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-4 mx-auto" id="cpu">
       <div class="row text-center mx-xxl-auto">
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/81af480495c6f85a6326a2f615c3dc5f/Product/35214/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 16 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-16--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e77ee351486f97e07c1585cc022a4424/Product/33209/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 16 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-16-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/7293651f3db23188e140442961a735f3/Product/33189/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 14 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-14-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-xxl-0 mt-xl-3 mt-lg-3 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-xxl-0 mt-xl-3 mt-lg-3 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/fd002201f5d15316c3e12bdb0923bc5b/Product/33171/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17X (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/b13ab75aa632f0c6325d71141b78c02a/Product/33680/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15X (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-15X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e99664e67ba42fb6e1f6233f8012e81e/Product/33668/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e5bdf5c6f7a56503e25107696cf58970/Product/33694/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-15--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e4febd2d10673e28b19b3b031cb4bce3/Product/33228/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17H (2023)</h5>
@@ -142,70 +139,70 @@
     </div>
     <div class="container col-xxl-10 col-xl-8" id="gpu">
       <div class="row text-center mx-auto">
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/81af480495c6f85a6326a2f615c3dc5f/Product/35214/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 16 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-16--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mt-xxl-4 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mt-xxl-4 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/0f3955bd225d3fa6b7476b1ee3b34297/Product/34341/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 7 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-7--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-auto mt-xxl-4 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-auto mt-xxl-4 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/2f3ee4719400f82d472ea589b4f8eee9/Product/34048/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">G5 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/G5--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e77ee351486f97e07c1585cc022a4424/Product/33209/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 16 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-16-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/7293651f3db23188e140442961a735f3/Product/33189/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 14 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-14-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/fd002201f5d15316c3e12bdb0923bc5b/Product/33171/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17X (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-3 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/b13ab75aa632f0c6325d71141b78c02a/Product/33680/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15X (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-15X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-auto mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-2 col-sm-4 col-xs-8 mx-xxl-auto mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e99664e67ba42fb6e1f6233f8012e81e/Product/33668/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-4 col-sm-4 col-xs-8 mx-xxl-3 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-4 col-sm-4 col-xs-8 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e5bdf5c6f7a56503e25107696cf58970/Product/33694/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-15--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-xl-4 col-sm-4 col-xs-8 mx-xxl-3 mb-xxl-5 mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-xl-4 col-sm-4 col-xs-8 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e4febd2d10673e28b19b3b031cb4bce3/Product/33228/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17H (2023)</h5>
@@ -216,56 +213,56 @@
     </div>
     <div class="container col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-4 mx-auto" id="both">
       <div class="row text-center mx-xxl-auto">
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/81af480495c6f85a6326a2f615c3dc5f/Product/35214/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 16 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-16--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e77ee351486f97e07c1585cc022a4424/Product/33209/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 16 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-16-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/7293651f3db23188e140442961a735f3/Product/33189/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AERO 14 OLED (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AERO-14-OLED--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-xxl-0 mt-xl-3 mt-lg-3 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-xxl-0 mt-xl-3 mt-lg-3 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/fd002201f5d15316c3e12bdb0923bc5b/Product/33171/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17X (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/b13ab75aa632f0c6325d71141b78c02a/Product/33680/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15X (2023)</h5>  
             <a href="https://www.gigabyte.com/Laptop/AORUS-15X--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e99664e67ba42fb6e1f6233f8012e81e/Product/33668/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-17--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e5bdf5c6f7a56503e25107696cf58970/Product/33694/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 15 (2023)</h5>
             <a href="https://www.gigabyte.com/Laptop/AORUS-15--2023" target="_blank" class="btn btn-dark laptopBtn">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
+        <div class="card col-xxl-2 col-md-4 col-sm-8 col-xs-4 mt-3 mb-xxl-5 mx-auto laptopCard" style="width: 13rem; height: 20rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e4febd2d10673e28b19b3b031cb4bce3/Product/33228/png/300" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">AORUS 17H (2023)</h5>
@@ -277,6 +274,5 @@
     
 <script src="bootstrap.bundle.min.js"></script>
 <script src="gigabyte.js"></script>
-<script src="laptop.js"></script>
 </body>
 </html>

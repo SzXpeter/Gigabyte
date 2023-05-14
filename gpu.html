@@ -80,20 +80,18 @@
       <h1 class="mb-3 mx-auto" id="gpuTitle">Videókártyák</h1>
       <p class="mb-3" style="font-size: 1.5rem;">Itt megtalálhatja legújabb NVIDIA Series és AMD Series videókártyáinkat.</p>
     <div class="row fw-bold">
-      <a href="#nvidia_series" class="typeSelect col-xxl-6 float-top nvidiaText">
+      <a href="#..." class="typeSelect col-xxl-6 float-top nvidiaText">
         <h2>NVIDIA Series</h2>
       </a>
-      <a href="#amd_series" class="typeSelect col-xxl-6 float-top">
+      <a href="#..." class="typeSelect col-xxl-6 float-top">
         <h2>AMD Series</h2>
       </a>
       <div class="row">
-        <input type="checkbox" name="" id="nvidiaCheckbox" class="col" onchange="show()">
-        <input type="checkbox" name="" id="amdCheckbox" class="col" onchange="show()">
+        <input type="checkbox" name="" id="nvidiaCheckbox" class="col" onchange="gpuShow()">
+        <input type="checkbox" name="" id="amdCheckbox" class="col" onchange="gpuShow()">
       </div>
     </div>
   </div>
-
-  <hr>
   
   <div class="container">
     <div class="mt-5 text-center" id="GPUs">
@@ -586,6 +584,5 @@
 
   <script src="bootstrap.bundle.min.js"></script>
   <script src="gigabyte.js"></script>
-  <script src="gpu.js"></script>
 </body>
 </html>

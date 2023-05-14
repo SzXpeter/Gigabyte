@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="//www.gigabyte.com/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body id="monitorBody">
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gigabyte</a>
@@ -60,8 +60,238 @@
 
     <!-- Oldal ötlet: Monitorok hz alapján, 120, 144, 165, 240, range inputtal kiválasztás + megjelenítés (js), Összesen 28 kártya-->
 
+    <video id="monitorVideo" width="100%" height="100%" muted autoplay loop>
+      <source type="video/mp4" src="//static.gigabyte.com/StaticFile/Video/Global/0ae2ad90aba8bd775c7bd6e3be5ac51f/PromotionBannerVideo/169">
+    </video>
+
+    <div class="container mx-auto text-center">
+      <h1 id="monitorTitle">Monitorok</h1>
+      <p style="max-width: 80%; font-size: 1.5rem;" class="mx-auto">A lehető legjobb minúségű monitorok, amik közül az eszközök hertzje alapján szabadon válogathat.</p>
+    </div>
+
+    <div class="container mx-auto text-center">
+      <h3>Válassza ki kívánt monitort!</h3>
+      <input type="range" value="0" min="0" max="3" class="mb-5 col-4" id="rangeSelect" onchange="show()">
+      <div class="container col-xxl-10 col-12 mx-auto mb-5" id="firstHZ">
+        <h3>120 Hz-es monitorok</h3>
+        <div class="row mt-5">
+          <div class="card col-xxl-5 col-12 mx-auto mb-5 monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/93e708041b91c346ce74c31c06db98c7/Product/29488/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FO48U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FO48U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-5 col-12 mx-auto mb-5 monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/28cc8d27ded9de964eca2eb0ceefe142/Product/31496/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">S55U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FO48U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="secondHZ">
+        <h3>144 Hz-es monitorok</h3>
+        <div class="row mt-5 mx-xxl-auto">
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/6e46520b3a2cae9bae80126e6a0492fc/Product/28439/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FV43U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FV43U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/a78c26693627c1dfc76ba75747af8862/Product/28809/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI32U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI32U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/12bfbaace5a2898e3d97162a599b801b/Product/29807/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G34WQC A Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G34WQC-A" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/0dc67255c60ff44e1df04781b1283033/Product/25768/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G34WQC Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G34WQC" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/548cfc3956ee37fd889a06f759408201/Product/24862/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27Q Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27Q" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/ceeeebaf48ac1d92999bc7c8bdcdd4b1/Product/24884/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27F Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27F" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/8880a23ae9d6c9d443b3afb44f798fad/Product/31913/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M32U Arm Edition Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M32U-AE" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/f1b27b47815fc91fca848eac8732defe/Product/29528/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M32U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M32U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-xxl-5 mb-lg-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/2d84a2ebf7548ccf033c7bc4ed9aee03/Product/31826/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M28U Arm Edition Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M28U-AE" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-xxl-5 mb-lg-5 mb-md-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/841b0183a6d91d7a137eed464b6c50d8/Product/28463/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M28U Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M28U" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/578f04ee5d5120baef651fb890bba831/Product/26025/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M27Q Gaming Monitor (rev. 1.0)</h5>
+              <a href="https://www.gigabyte.com/Monitor/M27Q-rev-10" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-5 mb-xxl-5 mb-xl-5 mb-lg-5 mb-md-5 mb-sm-5 mb-5 mx-xxl-5 mx-xl-auto mx-lg-auto mx-md-auto mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/2b0ec95297397fe99546dd0ef5c8118b/Product/26035/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M27F Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M27F" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto col-xxl-12 col-xl-8 col-12" id="thirdHZ">
+        <h3>165 Hz-es monitorok</h3>
+        <div class="row mt-5">
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/9237e14e85907343e5143f313ae8bcf3/Product/27391/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI32Q Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI32Q" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/f7d638c017332cf9aa1ea0b1435a7528/Product/23476/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI27Q-P Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI27Q-P" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-auto mt-xxl-4 mx-auto mx-xs-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/f0a5c0827937b55d81bd6b0c105779e3/Product/23277/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI27Q Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI27Q" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/f72ed51611d5f64e0642d1dc2ad89778/Product/29808/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G32QC Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G32QC" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/79121c3d63c9a92cd1c5f486013d29d5/Product/27110/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27QC A Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27QC-A" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/8c3905f9968ade00cdf8076683ea6267/Product/24856/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27QC Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27QC" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/644dbdb3081f2eac491aa32394176f8b/Product/27101/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27FC A Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27FC-A" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-auto mb-xxl-5 mx-auto mx-xs-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/2e78f5948f5c22b750603b3f07c77082/Product/24868/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">G27FC Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/G27FC" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/4f2a5bda632f556a5afb21475a6ba4b4/Product/29754/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M34WQ Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M34WQ" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-2 col-xl-2 col-sm-4 col-12 mt-5 mx-xxl-3 mx-sm-auto mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/cd49d604df976fcacc58a9bbb0eccfa9/Product/31038/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M27F A Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M27F-A" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-12 col-xl-12 col-lg-12" id="fourthHZ">
+        <h3>240 Hz-es Monitorok</h3>
+        <div class="row mt-5">
+          <div class="card col-xxl-3 col-lg-6 mb-5 mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/943a3b012cea500c912dce969a490b8c/Product/26638/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI27Q-X Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI27Q-X" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-lg-6 mb-5 mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/3f31055b50448ff13e5f91dcaa55dedb/Product/25992/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AORUS FI25F Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/AORUS-FI25F" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-lg-6 mb-5 mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/811fbc446f82297a459da150f839a72d/Product/30278/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M27Q X Gaming Monitor</h5>
+              <a href="https://www.gigabyte.com/Monitor/M27Q-X" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+          <div class="card col-xxl-3 col-lg-6 mb-5 mx-auto monitorCard" style="width: 13rem; height: 20rem;">
+            <img src="//static.gigabyte.com/StaticFile/Image/Global/578f04ee5d5120baef651fb890bba831/Product/26025/png/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M27Q Gaming Monitor (rev. 1.0)</h5>
+              <a href="https://www.gigabyte.com/Monitor/M27Q-rev-10" target="_blank" class="btn btn-dark monitorBtn">Megnézem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 <script src="bootstrap.bundle.min.js"></script>
 <script src="gigabyte.js"></script>
+<script src="monitor.js"></script>
 </body>
 </html>

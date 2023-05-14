@@ -82,3 +82,47 @@
 #laptopTitle {
     font-size: 6rem;
 }
+
+/* Monitor */
+
+#monitorTitle {
+    font-size: 6rem;
+}
+
+#rangeSelect {
+    accent-color: black;
+}
+
+.monitorCard {
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 992px) {
+    .monitorCard:hover {
+        width: 20% !important;
+        height: 27% !important;
+        box-shadow: 3px 3px 10px grey;
+        transition: 0.5s;
+    }
+}
+
+#monitorBody {
+    background-color: white;
+}
+
+#firstHZ {
+    display: none;
+}
+
+#secondHZ {
+    display: none;
+}
+
+#thirdHZ {
+    display: none;
+}
+
+#fourthHZ {
+    display: none;
+}

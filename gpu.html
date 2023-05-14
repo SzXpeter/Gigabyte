@@ -11,8 +11,8 @@
   <link rel="shortcut icon" href="//www.gigabyte.com/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="gpuMenu">
+<body id="gpuBody">
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="gpuMenu navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Gigabyte</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -79,10 +79,11 @@
 
   <div class="col-7 mt-5 mb-5 text-center mx-auto">
     <div class="row">
-      <h1 class="mb-3">Különböző szériáink tökéletes teljesítményt fognak nyújtani önnek!</h1>
+      <h1 class="mb-3 mx-auto" id="gpuTitle">Videókártyák</h1>
+      <p class="mb-3" style="font-size: 1.5rem;">Itt megtalálhatja legújabb NVIDIA Series és AMD Series videókártyáinkat.</p>
     </div>
     <div class="row fw-bold">
-      <a href="#nvidia_series" class="typeSelect col-xxl-6 float-top border-end border-2 border-dark">
+      <a href="#nvidia_series" class="typeSelect col-xxl-6 float-top nvidiaText">
         <h2>NVIDIA Series</h2>
       </a>
       <a href="#amd_series" class="typeSelect col-xxl-6 float-top">
@@ -93,286 +94,286 @@
   </div>
   <hr>
   <div class="container">
-    <div class="mt-5 border border-2 border-dark text-center" id="GPUs">
+    <div class="mt-5 text-center" id="GPUs">
       <h1 id="nvidia_series" class="mx-auto mt-3">NVIDIA SERIES</h1>
       <div class="row">
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/35b0cbd3888b6fe9de7ece82930b90f6/Product/32764/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4090 XTREME WATERFORCE 24G (rev. 1.1)</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4090 XTREME WATERFORCE 24G (rev. 1.1)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090AORUSX-W-24GD-rev-11#kf" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/7de12b80a86045b4b6260fb83c4c0c08/Product/32119/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4090 XTREME WATERFORCE 24G (rev. 1.0)</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4090 XTREME WATERFORCE 24G (rev. 1.0)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090AORUSX-W-24GD-rev-10#kf" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/eb3caf544215f0272a422656ae1ddd5e/Product/32494/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4080 16G-dark WATERFORCE</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4080 16G-dark WATERFORCE</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080AORUSX-W-16GD#kf" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/c04738fd92e9a6adf8366d256df363c3/Product/32445/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4080 16GB XTREME WATERFORCE WB</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4080 16GB XTREME WATERFORCE WB</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080AORUSX-WB-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e58ca832d331d2f628bd2e3cdb4f947a/Product/32834/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4090 MASTER 24G</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4090 MASTER 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090AORUS-M-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/acb001b5080604b2ccc5107fec8c8305/Product/32836/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4080 16GB MASTER</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4080 16GB MASTER</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080AORUS-M-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/bc99d35a8d6a11ded53a2cad359e92ff/Product/33466/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4070 Ti MASTER 12G</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4070 Ti MASTER 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TAORUS-M-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/6116a7d1440e9cbe2463cd0db6ee872e/Product/34857/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4070 MASTER 12G</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4070 MASTER 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4070AORUS-M-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/a92a079cb9acf20b071bc32d37a82b75/Product/33487/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS GeForce RTX&#8482; 4070 Ti ELOTE 12G</h5>
+            <h5 class="card-title text-dark">AORUS GeForce RTX&#8482; 4070 Ti ELOTE 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TAORUS-E-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/352d456a94117a06e7e29f22ade08f5c/Product/32030/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4090 GAMING OC 24G (rev. 1.0 / 1.1)</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4090 GAMING OC 24G (rev. 1.0 / 1.1)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090GAMING-OC-24GD-rev-10-11" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/352d456a94117a06e7e29f22ade08f5c/Product/32030/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4090 GAMING 24G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4090 GAMING 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090GAMING-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/fb084d091b0f2b8f89cb90af1b0a25c5/Product/32283/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB GAMING OC</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB GAMING OC</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080GAMING-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/8eb3b22f0d9b6aff338655e43c0df4e5/Product/32823/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB GAMING</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB GAMING</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080GAMING-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/a251c4a029e27ad0398af9c3799e4495/Product/33432/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti GAMING OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti GAMING OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TGAMING-OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/b9e48d0478c93edfbd3a84e332370b10/Product/33762/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti GAMING 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti GAMING 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TGAMING-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/30912d1bab19421f7acffd625ad70d02/Product/34885/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 GAMING OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 GAMING OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4070GAMING-OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/43a12b609d68dee0c3702f9ae73eac1b/Product/33910/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4090 AERO OC 24G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4090 AERO OC 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090AERO-OC-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/f20ffb68199a62943b9edad7ff3767f2/Product/32436/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB AERO OC</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB AERO OC</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080AERO-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/a406423335b3e7556ebd42c23db86ce1/Product/33054/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB AERO</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB AERO</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080AERO-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/c1bef568f20b2ffbbd0a1b8d316a25b5/Product/33441/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti AERO OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti AERO OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TAERO-OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/1bfdea8a466689810bb0f8505c32c399/Product/34894/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 AERO OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 AERO OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4070AERO-OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/21260507766ddfdc5cf98c672b24a991/Product/32374/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB EAGLE OC</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB EAGLE OC</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080EAGLE-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/78c041dca6a10a4b4bf2ba724e0676cc/Product/32381/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB EAGLE</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB EAGLE</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080EAGLE-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/67ac8ec4160ac136af1c457bf71e93d0/Product/34335/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti EAGLE OC 12G (rev. 2.0)</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti EAGLE OC 12G (rev. 2.0)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TEAGLE-OC-12GD-rev-20" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/2ba6f461d7956db85ecc43de9177b73f/Product/33450/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti EAGLE OC 12G (rev. 1.0)</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti EAGLE OC 12G (rev. 1.0)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TEAGLE-OC-12GD-rev-10" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/713b8711c64d26bce543db4e43ccd893/Product/33458/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti EAGLE 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti EAGLE 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TEAGLE-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/2977ff92cb7a0ad8f654e25772db9f25/Product/34882/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 EAGLE OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 EAGLE OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4070EAGLE-OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/09d32ada8b1f37d37a708ba4581238f9/Product/32013/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4090 WINDFORCE 24G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4090 WINDFORCE 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4090WF3-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/69b244043bf85f8598963bb50a5cd0a8/Product/33771/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4080 16GB WINDFORCE</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4080 16GB WINDFORCE</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4080WF3-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/8243088395567d4e2843be181e12613d/Product/34122/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 Ti WINDFORCE OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 Ti WINDFORCE OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N407TWF3OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mb-3 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto mb-3 gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/a44ab03509015b2c98ed350a97a0a46b/Product/34848/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">GeForce RTX&#8482; 4070 WINDFORCE OC 12G</h5>
+            <h5 class="card-title text-dark">GeForce RTX&#8482; 4070 WINDFORCE OC 12G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-N4070WF3OC-12GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       </div>
@@ -385,197 +386,197 @@
       <h1 id="amd_series" class="mx-auto">AMD SERIES</h1>
       
       <div class="row">
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/04a28aa202dec679ec59dbd21bc71aad/Product/32850/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 7900 XTX RLITE 24G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 7900 XTX RLITE 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R79XTXAORUS-E-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/df68c5863e046427671d3cf6d9a4d6e4/Product/32888/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 7900 XTX GAMING OC 24G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 7900 XTX GAMING OC 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R79XTXGAMING-OC-24GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/0b56655c1f1f40d6a6a610bdff4b931c/Product/32879/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX7900 XT GAMING OC 20G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX7900 XT GAMING OC 20G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R79XTGAMING-OC-20GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/ffebdb331cdc6e8eecf7f2b4b42b8232/Product/32793/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 7900 XTX 24G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 7900 XTX 24G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R79XTX-24GC-B" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/868436ba12e23fc0d98e26322a618a2c/Product/32810/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 7900 XT 20G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 7900 XT 20G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R79XT-20GC-B" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/1575ca3107ada01c47255e7580a30d42/Product/31524/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6950 XT XTREME WATERFORCE WB 16G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6950 XT XTREME WATERFORCE WB 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R695XTAORUSX-WB-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/c973b83ea7dadc0cc9c571ceaf5df41d/Product/28768/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6900 XT XTREME WATERFORCE WB 16G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6900 XT XTREME WATERFORCE WB 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R69XTAORUSX-WB-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/9a461e1f617f0a688cf6c5d9f2a792ed/Product/30367/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6900 XT MASTER 16G (rev. 2.0)</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6900 XT MASTER 16G (rev. 2.0)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R69XTAORUS-M-16GD-rev-20" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/e059e84029f763c411bdeb89afece25a/Product/27371/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6900 XT MASTER 16G (rev. 1.0)</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6900 XT MASTER 16G (rev. 1.0)</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R69XTAORUS-M-16GD-rev-10" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/cb505a967bb885840298241dad4b764a/Product/26951/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6800 XT MASTER TYPE C 16G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6800 XT MASTER TYPE C 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68XTAORUS-M-16GC" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/987573c08d11833a015940343c9746dd/Product/26818/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6800 XT MASTER 16G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6800 XT MASTER 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68XTAORUS-M-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/165a7f0a578fdbebb6e16e5d038d2170/Product/26804/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">AORUS Radeon&#8482; RX 6800 MASTER 16G</h5>
+            <h5 class="card-title text-dark">AORUS Radeon&#8482; RX 6800 MASTER 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68AORUS-M-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/dd312f05059ab82599b53f8d929550d6/Product/31515/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6950 XT GAMING OC 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6950 XT GAMING OC 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R695XTGAMING-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/9d09853692f5935bf660cbabaebfd9b1/Product/26933/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6900 XT GAMING OC 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6900 XT GAMING OC 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R69XTGAMING-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/c8cc80789047a6bf1672bf22d108e7e9/Product/26757/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 XT GAMING OC 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 XT GAMING OC 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68XTGAMING-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/0a66e50040f7bed295840382506c93b2/Product/29397/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 XT GAMING 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 XT GAMING 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68XTGAMING-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/d7c5b193c273930334c36f06b336dd17/Product/26749/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 GAMING OC 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 GAMING OC 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68GAMING-OC-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/fc9eb3bfca081cb364c34e3011c83ad8/Product/29388/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 GAMING 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 GAMING 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68GAMING-16GD" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mb-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto mb-5 gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/636dbf986047312efc99ef0066178ede/Product/26919/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6900 XT 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6900 XT 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R69XT-16GC-B" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mb-5 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto mb-5 gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/c0bbcfc26864fe03dcc9b32d285d77d5/Product/26410/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 XT 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 XT 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68XT-16GC-B" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       
-        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mb-3 gpuCard">
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-5 mx-auto mb-3 gpuCard" style="width: 15rem; height: 26rem;">
           <img src="//static.gigabyte.com/StaticFile/Image/Global/1c24cc7f50ab47464a78ee4a43ac2a78/Product/26401/png/300"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-white">Radeon&#8482; RX 6800 16G</h5>
+            <h5 class="card-title text-dark">Radeon&#8482; RX 6800 16G</h5>
             <a href="https://www.gigabyte.com/Graphics-Card/GV-R68-16GC-B" target="_blank"
-              class="btn gpuButton">Megnézem</a>
+              class="btn btn-dark gpuButton">Megnézem</a>
           </div>
         </div>
       </div>

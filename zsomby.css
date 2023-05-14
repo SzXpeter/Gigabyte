@@ -1,5 +1,19 @@
 /* GPU */
 
+#gpuBody {
+    background-color: white;
+}
+
+#gpuTitle {
+    font-size: 6rem;
+}
+
+@media screen and (min-width: 1400px) {
+    .nvidiaText {
+        border-right: 2px solid black;
+    }
+}
+
 .typeSelect {
     text-decoration: none;
     color: black;
@@ -10,13 +24,22 @@
 }
 
 .gpuCard {
-    background-color: #8d8d8a;
-    /* height: 440px; */
-    /* background-color: transparent; */
+    /* background-color: #8d8d8a;
+    height: 440px; 
+    background-color: transparent; */
+    border: 1px solid white !important;
+    border-radius: 7px;
+}
+
+.gpuCard:hover {
+    /* width: 17%;
+    height: 25%; */
+    box-shadow: 5px 5px 15px grey;
+    transition: 0.5s;
 }
 
 
-.gpuButton {
+/* .gpuButton {
     background-color: white;
     color: black;
 }
@@ -24,7 +47,7 @@
 .gpuButton:hover {
     background-color: black;
     color: white;
-}
+} */
 
 .backArrow {
     color: black;
@@ -87,6 +110,7 @@
 
 #monitorTitle {
     font-size: 6rem;
+    margin: 0 auto;
 }
 
 #rangeSelect {

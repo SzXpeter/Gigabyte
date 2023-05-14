@@ -5,7 +5,8 @@
 }
 
 #gpuTitle {
-    font-size: 6rem;
+    font-size: 3rem;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1400px) {
@@ -103,14 +104,20 @@
 } */
 
 #laptopTitle {
-    font-size: 6rem;
+    font-size: 3rem;
 }
 
 /* Monitor */
 
 #monitorTitle {
-    font-size: 6rem;
-    margin: 0 auto;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    #monitorTitle, #laptopTitle, #gpuTitle
+    {
+        font-size: 6rem;
+    }
 }
 
 #rangeSelect {
@@ -135,18 +142,7 @@
     background-color: white;
 }
 
-#firstHZ {
+#firstHZ, #secondHZ, #thirdHZ, #fourthHZ {
     display: none;
 }
 
-#secondHZ {
-    display: none;
-}
-
-#thirdHZ {
-    display: none;
-}
-
-#fourthHZ {
-    display: none;
-}

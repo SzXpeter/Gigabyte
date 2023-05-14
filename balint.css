@@ -58,3 +58,9 @@ body
 .oldalbar a:hover {
     color: black;
 }
+
+@media screen and (max-width: 1110px) {
+    .oldalbar {
+        display: none;
+    }
+}

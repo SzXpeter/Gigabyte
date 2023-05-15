@@ -5,65 +5,798 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="balint.css">
-    <title>PC alkatrészek</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PC perifériák</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body style="height: 4000px;">
-    <nav class="navbar navbar-expand-lg bg-dark" id="navbar" data-bs-theme="dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Gigabyte</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav bold mx-auto">
-              <li class="nav-item me-lg-5 ms-0">
-                <a class="nav-link active" href="index.html">Főoldal</a>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark" id="navbar" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Gigabyte</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav bold mx-auto">
+          <li class="nav-item me-lg-5 ms-0">
+            <a class="nav-link active" href="index.html">Főoldal</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Számítógépek
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="alaplap.html">Alaplapok</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Számítógépek
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="alaplap.html">Alaplapok</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="gpu.html">Videó kártyák</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="pc.html">Asztali PC-k</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="pc-periferiak.html">PC perifériák</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="pc-alkatreszek.html">PC alkatrészek</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="laptop.html">Laptop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="monitor.html">Monitorok</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="gpu.html">Videó kártyák</a>
               </li>
-              <li class="nav-item ms-lg-5 ms-0">
-                <a class="nav-link" href="support.html">Segítségkérés</a>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="pc.html">Asztali PC-k</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="pc-periferiak.html">PC perifériák</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="pc-alkatreszek.html">PC alkatrészek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="laptop.html">Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-item" href="monitor.html">Monitorok</a>
               </li>
             </ul>
-          </div>
-        </div>
-    </nav>
-
-    <div class="contanier">
-      <div class="row">
-        
+          </li>
+          <li class="nav-item ms-lg-5 ms-0">
+            <a class="nav-link" href="support.html">Segítségkérés</a>
+          </li>
+        </ul>
       </div>
     </div>
+</nav>
+    
+    <div class="container">
+      <div class="row">
 
-  
-    <script src="bootstrap.bundle.min.js"></script>
+      <h1 class="display-1 közép text-black-50">PC tokok</h1>
+      <hr class="border-5">
+      
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/AC300W-Lite#kf"><img src="Kepek/AC300W Lite.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AC300W Lite</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/AC300W-Lite#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-AC300W-rev-10#kf"><img src="Kepek/AC300W (rev. 1.0).webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AC300W (rev. 1.0)</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-AC300W-rev-10#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-AC300W-rev-20#kf"><img src="Kepek/AC300W (rev. 2.0).webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AC300W (rev. 2.0)</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-AC300W-rev-20#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-AC300G#kf"><img src="Kepek/AORUS C300 GLASS.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS C300 GLASS</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-AC300G#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-AC500G-ST#kf"><img src="Kepek/AORUS C500 GLASS.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS C500 GLASS</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-AC500G-ST#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-AC700G#kf"><img src="Kepek/AORUS C700 GLASS.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS C700 GLASS</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-AC700G#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/XC700W#kf"><img src="Kepek/XC700W.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">XC700W</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/XC700W#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GZ-FS1CCA#kf"><img src="Kepek/Sumo 4192.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Sumo 4192</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GZ-FS1CCA#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GZ-FADA51-CJB#kf"><img src="Kepek/Sumo 5112.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Sumo 5112</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GZ-FADA51-CJB#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GIGABYTE-HORUS-AX1#kf"><img src="Kepek/GIGABYTE HORUS AX1.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">GIGABYTE HORUS AX1</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GIGABYTE-HORUS-AX1#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GB-C200G#kf"><img src="Kepek/GIGABYTE C200 GLASS.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">GIGABYTE C200 GLASS</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GB-C200G#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/PC-Case/GIGABYTE-HORUS-M#kf"><img src="Kepek/GIGABYTE HORUS M.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">GIGABYTE HORUS M</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/PC-Case/GIGABYTE-HORUS-M#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <h1 class="display-1 közép text-black-50">CPU hűtők</h1>
+        <hr class="border-5">
+        
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-120-ARGB-FAN#kf"><img src="Kepek/AORUS 120 ARGB FAN.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS 120 ARGB FAN</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-120-ARGB-FAN#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-140-ARGB-FAN#kf"><img src="Kepek/AORUS 140 ARGB FAN.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS 140 ARGB FAN</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-140-ARGB-FAN#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-240#kf"><img src="Kepek/AORUS WATERFORCE 240.webp" class="card-img-top" alt="..." style="height: 13.5rem; width: 13.5rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE 240</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-240#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-240#kf"><img src="Kepek/AORUS WATERFORCE 240.webp" class="card-img-top" alt="..." style="height: 13.5rem; width: 13.5rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE X 240</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-240#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-280#kf"><img src="Kepek/AORUS WATERFORCE 280.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE 280</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-280#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-280#kf"><img src="Kepek/AORUS WATERFORCE 280.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE X 280</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-280#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-360#kf"><img src="Kepek/AORUS WATERFORCE 360.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE 360</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-360#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-360#kf"><img src="Kepek/AORUS WATERFORCE X 360.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS WATERFORCE X 360</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-WATERFORCE-X-360#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-240#kf"><img src="Kepek/AORUS LIQUID COOLER 240.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS LIQUID COOLER 240</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-240#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-280#kf"><img src="Kepek/AORUS LIQUID COOLER 280.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS LIQUID COOLER 280</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-280#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-360#kf"><img src="Kepek/AORUS LIQUID COOLER 360.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS LIQUID COOLER 360</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-LIQUID-COOLER-360#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/ATC800#kf"><img src="Kepek/ATC800.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">ATC800</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/ATC800#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-CPU-cooler#kf"><img src="Kepek/ATC700.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">ATC700</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/AORUS-CPU-cooler#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 23rem;">
+          <div>
+            <a href="https://www.gigabyte.com/CPU-Cooler/XTC700#kf"><img src="Kepek/XTC700.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">XTC700</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/CPU-Cooler/XTC700#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <h1 class="display-1 közép text-black-50">Tápegységek</h1>
+        <hr class="border-5">
+
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP1200PM#kf"><img src="Kepek/AORUS P1200W 80+ PLATINUM MODULAR.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P1200W 80+ PLATINUM MODULAR</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP1200PM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP850GM#kf"><img src="Kepek/AORUS P850W 80+ GOLD Modular.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P850W 80+ GOLD Modular</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP850GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP750GM#kf"><img src="Kepek/AORUS P750W 80+ GOLD Modular.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P750W 80+ GOLD Modular</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP750GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-P450B#kf"><img src="Kepek/P450B.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P450B</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-P450B#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/PW400#kf"><img src="Kepek/PW400.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">PW400</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/PW400#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/P650B#kf"><img src="Kepek/P650B.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P650B</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/P650B#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-P550B#kf"><img src="Kepek/P550B.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P550B</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-P550B#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/PB500#kf"><img src="Kepek/PB500.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">PB500</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/PB500#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP750GM#kf"><img src="Kepek/AORUS P750W 80+ GOLD Modular.webp" class="card-img-top" alt="..." style="height: 15rem; width: 15rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P750W 80+ GOLD Modular</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP750GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-UD750GM#kf"><img src="Kepek/UD750GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">UD750GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-UD750GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-P750GM#kf"><img src="Kepek/P750GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P750GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-P750GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/G750H#kf"><img src="Kepek/G750H.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">G750H</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/G750H#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/B700H#kf"><img src="Kepek/B700H.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">B700H</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/B700H#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP1200PM#kf"><img src="Kepek/AORUS P1200W 80+ PLATINUM MODULAR.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P1200W 80+ PLATINUM MODULAR</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP1200PM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-AP850GM#kf"><img src="Kepek/AORUS P850W 80+ GOLD Modular.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS P850W 80+ GOLD Modular</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-AP850GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-UD1000GM-PG5#kf"><img src="Kepek/UD1000GM PG5.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">UD1000GM PG5</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-UD1000GM-PG5#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-UD1000GM#kf"><img src="Kepek/UD1000GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">UD1000GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-UD1000GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-UD850GM-PG5#kf"><img src="Kepek/UD850GM PG5.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">UD850GM PG5</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-UD850GM-PG5#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-UD850GM#kf"><img src="Kepek/UD850GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">UD850GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-UD850GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/GP-P1000GM#kf"><img src="Kepek/P1000GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P1000GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/GP-P1000GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 25rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Power-Supply/P850GM#kf"><img src="Kepek/P850GM.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">P850GM</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Power-Supply/P850GM#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <h1 class="display-1 közép text-black-50">Memória</h1>
+        <hr class="border-5">
+
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR5-32GB--2x16GB-6000MT-s#kf"><img src="Kepek/AORUS RGB Memory DDR5 32GB 2x16GB 6000MTs.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory DDR5 32GB (2x16GB) 6000MT/s</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR5-32GB--2x16GB-6000MT-s#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-Memory-DDR5-32GB--2x16GB-5200MT-s#kf"><img src="Kepek/AORUS Memory DDR5 32GB 2x16GB 5200MTs.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS Memory DDR5 32GB (2x16GB) 5200MT/s</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-Memory-DDR5-32GB--2x16GB-5200MT-s#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-3733MT-s#kf"><img src="Kepek/AORUS RGB Memory DDR4 16GB 2x8GB 3733MTs.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory DDR4 16GB (2x8GB) 3733MT/s</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-3733MT-s#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-3333MT-s#kf"><img src="Kepek/AORUS RGB Memory DDR4 16GB 2x8GB 3333MTs.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory DDR4 16GB (2x8GB) 3333MT/s</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-3333MT-s#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-4400MT-s#kf"><img src="Kepek/AORUS RGB Memory DDR4 16GB 2x8GB 4400MTs.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory DDR4 16GB (2x8GB) 4400MT/s</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-DDR4-16GB--2x8GB-4400MT-s#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-16GB--2x8GB-3600MHz#kf"><img src="Kepek/AORUS RGB Memory 16GB 2x8GB 3600MHz.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory 16GB (2x8GB) 3600MHz</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-16GB--2x8GB-3600MHz#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-16GB--2x8GB-3200MHz#kf"><img src="Kepek/AORUS RGB Memory 16GB 2x8GB 3200MHz.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">AORUS RGB Memory 16GB (2x8GB) 3200MHz</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/AORUS-RGB-Memory-16GB--2x8GB-3200MHz#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="card col-xl-3 col-md-4 col-sm-6 col-12 col-6 mt-4 mx-auto gpuCard" style="width: 17rem; height: 27rem;">
+          <div>
+            <a href="https://www.gigabyte.com/Memory/GIGABYTE-Memory-2666MHz#kf"><img src="Kepek/GIGABYTE Memory 16GB 2x8GB 2666MHz.webp" class="card-img-top" alt="..." style="height: 16.4rem; width: 16.4rem;"></a>
+            <div class="card-body">
+              <h5 class="card-title text-dark">GIGABYTE Memory 16GB (2x8GB) 2666MHz</h5>
+            </div>
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <a href="https://www.gigabyte.com/Memory/GIGABYTE-Memory-2666MHz#kf" class="btn btn-dark gpuButton">Megnézem</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+
+
+    </div>
+  </div>
+  <br>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="gigabyte.js"></script>
 </body>
 </html>

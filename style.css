@@ -313,3 +313,10 @@ body
 #firstHZ, #secondHZ, #thirdHZ, #fourthHZ {
     display: none;
 }
+
+/*PC + pc-periferiak + pc-alkatreszek*/
+
+.közép {
+    text-align: center;
+}
+
